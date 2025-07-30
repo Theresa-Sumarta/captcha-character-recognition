@@ -19,6 +19,7 @@ The objective is to accurately identify all characters in fixed-format CAPTCHA i
 - Each segmented character image was flattened into a feature vector for classification.
 
 **Handling Class Imbalance**
+
 The character classes in the CAPTCHA dataset were imbalanced, with certain characters appearing more frequently than others. This imbalance could negatively impact model performance, especially for less frequent characters.
 
 To mitigate this:
