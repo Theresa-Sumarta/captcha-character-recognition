@@ -39,7 +39,12 @@ class Captcha(object):
         return filtered
 
     def __call__(self, im_path, save_path):
-        """Perform inference on unseen CAPTCHA image."""
+        """
+        Algo for inference
+        args:
+            im_path: .jpg image path to load and to infer
+            save_path: output file path to save the one-line outcome
+        """
         # Load image
         image = self.load_jpg_image(im_path)
 
