@@ -65,6 +65,3 @@ To run the CAPTCHA prediction:
 
 ```bash
 python captcha_inference.py
-
-
----
