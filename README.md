@@ -50,4 +50,21 @@ The objective is to accurately identify all characters in fixed-format CAPTCHA i
 - **Explore Deep Learning:** Implement CNNs or hybrid models to handle more complex CAPTCHA styles and distortions.  
 - **Dynamic Segmentation:** Move from fixed coordinate cropping to object detection or contour-based segmentation for flexible and robust character extraction.
 
+## 🔧 Usage
+
+### Files Required
+Make sure the following files are in the same directory:
+- `captcha_inference.py` – main script for inference
+- `random_forest_model.pkl` – trained Random Forest model
+- `always_white_mask.pkl` – boolean mask to filter always-white pixels
+- `input100.jpg` – sample image for prediction (or replace with your own)
+
+### Run the script
+
+To run the CAPTCHA prediction:
+
+```bash
+python captcha_inference.py
+
+
 ---
