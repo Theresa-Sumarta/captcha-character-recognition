@@ -46,9 +46,7 @@ The objective is to accurately identify all characters in fixed-format CAPTCHA i
 ## 💡 Recommendations & Next Steps
 
 - **Expand Dataset:** Collect more labeled CAPTCHA images to improve model generalization, especially for underrepresented characters.  
-- **Balance Classes:** Apply oversampling techniques like SMOTE or class weighting to address class imbalance more effectively.  
 - **Explore Deep Learning:** Implement CNNs or hybrid models to handle more complex CAPTCHA styles and distortions.  
-- **Dynamic Segmentation:** Move from fixed coordinate cropping to object detection or contour-based segmentation for flexible and robust character extraction.
 
 ## 🔧 Usage
 
