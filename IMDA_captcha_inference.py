@@ -60,4 +60,4 @@ class Captcha(object):
 
 if __name__ == "__main__":
     captcha_char = Captcha()
-    captcha_char("/content/drive/My Drive/sampleCaptchas/input/input100.jpg", "predicted100.txt")
+    captcha_char("input100.jpg", "predicted100.txt")
