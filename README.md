@@ -20,11 +20,11 @@ The objective is to accurately identify all characters in fixed-format CAPTCHA i
 
 **Handling Class Imbalance**
 
-The character classes in the CAPTCHA dataset were imbalanced, with certain characters appearing more frequently than others. This imbalance could negatively impact model performance, especially for less frequent characters.
+- The character classes in the CAPTCHA dataset were imbalanced, with certain characters appearing more frequently than others. This imbalance could negatively impact model performance, especially for less frequent characters.
 
-To mitigate this:
-- **SMOTE (Synthetic Minority Over-sampling Technique)** was applied to generate synthetic examples for underrepresented classes, helping the model learn a more balanced representation.
-- **Balanced evaluation metrics** (such as balanced accuracy and macro F1-score) were used during model selection and validation to ensure performance was not biased toward majority classes.
+- To mitigate this:
+  - **SMOTE (Synthetic Minority Over-sampling Technique)** was applied to generate synthetic examples for underrepresented classes, helping the model learn a more balanced representation.
+  - **Balanced evaluation metrics** (such as balanced accuracy and macro F1-score) were used during model validation to ensure performance was not biased toward majority classes.
 
 **Model Training & Selection**  
 - A Random Forest classifier was chosen for its robustness to noise, ability to handle class imbalance via ensemble voting, and minimal need for feature scaling or extensive tuning.  
