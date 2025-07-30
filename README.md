@@ -18,6 +18,13 @@ The objective is to accurately identify all characters in fixed-format CAPTCHA i
 - Pixels always white across the dataset were masked out to reduce input dimensionality and noise. This mask was saved and reused during inference.  
 - Each segmented character image was flattened into a feature vector for classification.
 
+## Handling Class Imbalance
+The character classes in the CAPTCHA dataset were imbalanced, with certain characters appearing more frequently than others. This imbalance could negatively impact model performance, especially for less frequent characters.
+
+To mitigate this:
+- **SMOTE (Synthetic Minority Over-sampling Technique)** was applied to generate synthetic examples for underrepresented classes, helping the model learn a more balanced representation.
+- **Balanced evaluation metrics** (such as balanced accuracy and macro F1-score) were used during model selection and validation to ensure performance was not biased toward majority classes.
+
 **Model Training & Selection**  
 - A Random Forest classifier was chosen for its robustness to noise, ability to handle class imbalance via ensemble voting, and minimal need for feature scaling or extensive tuning.  
 - Hyperparameters tuned included number of trees (`n_estimators`=100), tree depth (`max_depth`=None), and minimum samples split/leaf.  
