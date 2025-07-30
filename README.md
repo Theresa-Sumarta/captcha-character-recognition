@@ -54,7 +54,7 @@ The objective is to accurately identify all characters in fixed-format CAPTCHA i
 
 ### Files Required
 Make sure the following files are in the same directory:
-- `captcha_inference.py` – main script for inference
+- `IMDA_captcha_inference.py` – main script for inference
 - `random_forest_model.pkl` – trained Random Forest model
 - `always_white_mask.pkl` – boolean mask to filter always-white pixels
 - `input100.jpg` – sample image for prediction (or replace with your own)
@@ -64,4 +64,4 @@ Make sure the following files are in the same directory:
 To run the CAPTCHA prediction:
 
 ```bash
-python captcha_inference.py
+python IMDA_captcha_inference.py
