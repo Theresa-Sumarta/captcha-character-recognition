@@ -34,13 +34,13 @@ The objective is to accurately identify all characters in fixed-format CAPTCHA i
 
 ## 📦 File Structure
 
-├── IMDA_model_training.ipynb   # Training and tuning notebook
-├── random_forest_model.pkl     # Saved trained model
-├── always_white_mask.pkl       # Mask of always-white pixels
-├── input100.jpg                # Example unseen CAPTCHA image
-├── predicted100.txt            # Prediction output from example image
-├── IMDA_captcha_inference.py   # Inference pipeline class
-├── README.md                   # Project documentation
+- ├── IMDA_model_training.ipynb   # Training and tuning notebook
+- ├── random_forest_model.pkl     # Saved trained model
+- ├── always_white_mask.pkl       # Mask of always-white pixels
+- ├── input100.jpg                # Example unseen CAPTCHA image
+- ├── predicted100.txt            # Prediction output from example image
+- ├── IMDA_captcha_inference.py   # Inference pipeline class
+- ├── README.md                   # Project documentation
 
 ## 💡 Recommendations & Next Steps
 
