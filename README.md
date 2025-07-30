@@ -39,6 +39,7 @@ The objective is to accurately identify all characters in fixed-format CAPTCHA i
 - ├── always_white_mask.pkl       # Mask of always-white pixels
 - ├── input100.jpg                # Example unseen CAPTCHA image
 - ├── predicted100.txt            # Prediction output from example image
+- ├── captcha_characters_dataset.csv # Flattened feature dataset CSV
 - ├── IMDA_captcha_inference.py   # Inference pipeline class
 - ├── README.md                   # Project documentation
 
